@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PacMan : MonoBehaviour
 {
@@ -67,36 +65,29 @@ public class PacMan : MonoBehaviour
 
     public void SetDifficultyForLevel(int level)
     {
-
-        if (level == 1)
+        switch(level)
         {
-
-            speed = 6;
+            case 1:
+                speed = 6;
+                break;
+            case 2:
+                speed = 7;
+                break;
+            case 3:
+                speed = 8;
+                break;
+            case 4:
+                speed = 9;
+                break;
+            case 5:
+                speed = 10;
+                break;
+            default:
+                speed = 6;
+                break;
 
         }
-        else if (level == 2)
-        {
 
-            speed = 7;
-
-        }
-        else if (level == 3)
-        {
-
-            speed = 8;
-
-        }
-        else if (level == 4)
-        {
-
-            speed = 9;
-
-        }
-        else if (level == 5)
-        {
-
-            speed = 10;
-        }
     }
 
     public void MoveToStartingPosition()
@@ -133,17 +124,11 @@ public class PacMan : MonoBehaviour
 
         if (canMove)
         {
-
             CheckInput();
-
             Move();
-
             UpdateOrientation();
-
             UpdateAnimationState();
-
             ConsumePellet();
-
         }
     }
 
@@ -152,7 +137,6 @@ public class PacMan : MonoBehaviour
 
         if (playedChomp1)
         {
-
             // Som da mordida, estabelece playedChomp1 para false
             audio.PlayOneShot(chomp2);
             playedChomp1 = false;
@@ -160,7 +144,6 @@ public class PacMan : MonoBehaviour
         }
         else
         {
-
             // Som da mordida, estabelece playedChomp1 para true
             audio.PlayOneShot(chomp1);
             playedChomp1 = true;

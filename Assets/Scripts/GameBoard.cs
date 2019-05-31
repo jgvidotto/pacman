@@ -120,11 +120,8 @@ public class GameBoard : MonoBehaviour
     {
 
         UpdateUI();
-
         CheckPelletsConsumed();
-
         CheckShouldBlink();
-
         BonusItems();
     }
 
@@ -214,59 +211,52 @@ public class GameBoard : MonoBehaviour
     {
 
         GameObject bonusitem = null;
+        switch (level)
+        {
+            case 1:
+                bonusitem = Resources.Load("Prefabs/bonus_cherries", typeof(GameObject)) as GameObject;
+                break;
+            case 2:
+                bonusitem = Resources.Load("Prefabs/bonus_strawberry", typeof(GameObject)) as GameObject;
+                break;
+            case 3:
+                bonusitem = Resources.Load("Prefabs/bonus_peach", typeof(GameObject)) as GameObject;
+                break;
+            case 4:
+                bonusitem = Resources.Load("Prefabs/bonus_peach", typeof(GameObject)) as GameObject;
+                break;
+            case 5:
+                bonusitem = Resources.Load("Prefabs/bonus_apple", typeof(GameObject)) as GameObject;
+                break;
+            case 6:
+                bonusitem = Resources.Load("Prefabs/bonus_apple", typeof(GameObject)) as GameObject;
+                break;
+            case 7:
+                bonusitem = Resources.Load("Prefabs/bonus_grapes", typeof(GameObject)) as GameObject;
+                break;
+            case 8:
+                bonusitem = Resources.Load("Prefabs/bonus_grapes", typeof(GameObject)) as GameObject;
+                break;
+            case 9:
+                bonusitem = Resources.Load("Prefabs/bonus_galaxian", typeof(GameObject)) as GameObject;
+                break;
+            case 10:
+                bonusitem = Resources.Load("Prefabs/bonus_galaxian", typeof(GameObject)) as GameObject;
+                break;
+            case 11:
+                bonusitem = Resources.Load("Prefabs/bonus_bell", typeof(GameObject)) as GameObject;
+                break;
+            case 12:
+                bonusitem = Resources.Load("Prefabs/bonus_bell", typeof(GameObject)) as GameObject;
+                break;
+            case 13:
+                bonusitem = Resources.Load("Prefabs/bonus_key", typeof(GameObject)) as GameObject;
+                break;
+            default:
+                bonusitem = Resources.Load("Prefabs/bonus_cherries", typeof(GameObject)) as GameObject;
+                break;
+        }
 
-        if (level == 1)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_cherries", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 2)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_strawberry", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 3)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_peach", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 4)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_peach", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 5)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_apple", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 6)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_apple", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 7)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_grapes", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 8)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_grapes", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 9)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_galaxian", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 10)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_galaxian", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 11)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_bell", typeof(GameObject)) as GameObject;
-        }
-        else if (level == 12)
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_bell", typeof(GameObject)) as GameObject;
-        }
-        else
-        {
-            bonusitem = Resources.Load("Prefabs/bonus_key", typeof(GameObject)) as GameObject;
-        }
 
         Instantiate(bonusitem);
     }
