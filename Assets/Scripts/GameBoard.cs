@@ -74,7 +74,7 @@ public class GameBoard : MonoBehaviour
 
             Vector2 pos = o.transform.position;
 
-            if (o.name != "PacMan" && o.name != "Nodes" && o.name != "NonNodes" && o.name != "Maze" && o.name != "Pellets" && o.tag != "Ghost" && o.tag != "ghostHome" && o.name != "Canvas" && o.tag != "UIElements")
+            if (o.tag != "PacMan" && o.tag != "SceneObjects" && o.tag != "Ghost" && o.tag != "ghostHome" && o.tag != "UIElements")
             {
 
                 if (o.GetComponent<Tile>() != null)

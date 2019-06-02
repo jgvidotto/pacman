@@ -13642,7 +13642,7 @@ GameObject:
   - component: {fileID: 929036353}
   m_Layer: 0
   m_Name: Maze
-  m_TagString: Untagged
+  m_TagString: SceneObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16377,7 +16377,7 @@ GameObject:
   - component: {fileID: 1116208840}
   m_Layer: 0
   m_Name: Pellets
-  m_TagString: Untagged
+  m_TagString: SceneObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16396,7 +16396,7 @@ Transform:
   - {fileID: 942101837}
   - {fileID: 320572634}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1128376754
 GameObject:
@@ -18497,7 +18497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1223999310
 AudioSource:
@@ -21321,7 +21321,7 @@ GameObject:
   - component: {fileID: 1444979359}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: SceneObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29857,7 +29857,7 @@ PrefabInstance:
     - target: {fileID: 596747480025036981, guid: 84bc25b8e0eb44112a6895ea7215a411,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 596747480025036981, guid: 84bc25b8e0eb44112a6895ea7215a411,
         type: 3}
